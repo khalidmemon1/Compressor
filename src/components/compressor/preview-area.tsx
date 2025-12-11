@@ -129,7 +129,7 @@ export default function PreviewArea() {
           return (
             <div key={img.id} className="border rounded-lg p-4 space-y-3">
               <div className="relative aspect-video bg-muted rounded overflow-hidden">
-                <img src={img.preview} alt={img.file.name} className="w-full h-full object-contain" />
+                <img src={img.preview} alt={`Preview of ${img.file.name}`} className="w-full h-full object-contain" />
                 <Button
                   variant="destructive"
                   size="icon"

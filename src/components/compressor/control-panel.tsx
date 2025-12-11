@@ -262,7 +262,7 @@ export default function ControlPanel() {
                     </div>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>Use Mozilla's advanced JPEG encoder for better compression</p>
+                    <p>Use Mozilla&apos;s advanced JPEG encoder for better compression</p>
                   </TooltipContent>
                 </Tooltip>
               </div>
