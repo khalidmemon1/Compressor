@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 
+export const dynamic = 'force-static'
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Image Compressor - Free Online Tool',
@@ -11,9 +13,9 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: '#3b82f6',
     icons: [
       {
-        src: '/logo.png',
+        src: '/favicon.ico',
         sizes: 'any',
-        type: 'image/png',
+        type: 'image/x-icon',
       },
     ],
   }
