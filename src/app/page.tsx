@@ -33,7 +33,7 @@ export default function Home() {
     '@type': 'WebApplication',
     name: 'Image Compressor',
     description: 'Free online image compression tool. Reduce JPEG, PNG, WebP file sizes without uploads.',
-    url: 'https://yoursite.com',
+    url: 'https://compressor.nuvolin.com',
     applicationCategory: 'MultimediaApplication',
     operatingSystem: 'Any',
     offers: {

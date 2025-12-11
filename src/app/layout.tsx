@@ -25,14 +25,14 @@ export const metadata: Metadata = {
   publisher: "Nuvolin.com",
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   alternates: {
-    canonical: "https://yoursite.com"
+    canonical: "https://compressor.nuvolin.com"
   },
   openGraph: {
     title: "Free Image Compressor - Reduce Photo Size Online Without Upload",
     description: "Compress JPEG, PNG, WebP images up to 90% smaller. Free browser-based tool with batch processing. No uploads, 100% private and secure.",
     type: "website",
     locale: "en_US",
-    url: "https://yoursite.com",
+    url: "https://compressor.nuvolin.com",
     siteName: "Image Compressor",
     images: [{
       url: "/logo.png",
