@@ -16,7 +16,7 @@ import { Separator } from '@/components/ui/separator'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { 
   RotateCcw, Settings, ChevronDown, Info, 
-  Zap, Image, Sliders, Palette, FileImage,
+  Zap, Image as ImageIcon, Sliders, Palette, FileImage,
   Monitor, Smartphone, Maximize2
 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -147,7 +147,7 @@ export default function ControlPanel() {
                     <TooltipTrigger asChild>
                       <div className="flex items-center justify-between">
                         <label className="text-sm font-medium flex items-center gap-2">
-                          <Image className="h-4 w-4" />
+                          <ImageIcon className="h-4 w-4" />
                           Maintain Aspect Ratio
                         </label>
                         <Switch

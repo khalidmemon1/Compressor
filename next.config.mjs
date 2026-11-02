@@ -17,8 +17,7 @@ const nextConfig = {
       }
     }
     return config
-  },
-  transpilePackages: ['jszip']
+  }
 }
 
 export default nextConfig

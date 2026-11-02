@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import Script from "next/script"
 import "./globals.css"
 import { ThemeProvider } from "@/components/layout/theme-provider"
 import { TooltipProvider } from "@/components/ui/tooltip"
@@ -17,6 +18,7 @@ export const viewport = {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://compressor.nuvolin.com"),
   title: "Free Image Compressor Online - Reduce Photo Size Without Upload | 2024",
   description: "Compress JPEG, PNG, WebP images up to 90% smaller. Free online tool with batch processing, no uploads required. Reduce image file size instantly in your browser.",
   keywords: "image compressor, compress images online, reduce image size, photo compressor, optimize images, webp converter, batch image compression, free image optimizer, resize images, image file size reducer",
@@ -61,20 +63,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQMPEDWSLC"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-JQMPEDWSLC');
-            `,
-          }}
-        />
-      </head>
       <body className={inter.className}>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-JQMPEDWSLC"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JQMPEDWSLC');
+          `}
+        </Script>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

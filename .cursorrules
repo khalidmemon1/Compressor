@@ -1,0 +1,9 @@
+# Cursor AI Rules for Compressor
+
+- Framework: Next.js 15 App Router with TypeScript and static HTML export (`output: 'export'`).
+- 100% Client-Side: Never introduce backend/server uploads. All image operations must run in the browser using Web Workers or Canvas.
+- Styling: Tailwind CSS using semantic theme variables (`bg-background`, `text-primary`, `border-border`, etc.). Support both light and dark themes.
+- Icons: Import `Image as ImageIcon` from `lucide-react` to avoid JSX accessibility lint clashes.
+- Components: Place reusable UI widgets in `src/components/ui/` and compressor-specific widgets in `src/components/compressor/`.
+- State: Use Zustand (`src/store/use-compressor-store.ts`) for global compression state.
+- Verification: Always verify changes compile without errors via `npm run build` and `npm run lint`.
