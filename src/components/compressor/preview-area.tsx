@@ -6,7 +6,7 @@ import { Download, X, Archive, Loader2 } from 'lucide-react'
 import { compressImage } from '@/core/compression/compressor'
 import { toast } from 'sonner'
 import { useState } from 'react'
-// import JSZip from 'jszip'
+import JSZip from 'jszip'
 
 export default function PreviewArea() {
   const { images, options, removeImage, setIsProcessing, isProcessing } = useCompressorStore()
